@@ -1,0 +1,8 @@
+1新建目录使用git init进行git控制，或者直接从github克隆下来一个仓库
+2将要上传的文件放在上一步的目录下，使用git add 文件名，或者使用git add --all讲文件传入本地暂存区
+3这时候可以git status查看本地暂存区都有哪些文件及其状态
+4使用git config --global user.name “名字”；git config --global user.email "地址"设置名字和email作为提交时的签名
+	每次提交都会包含签名
+5使用git commit -m “提交说明内容”进行提交
+6链接github仓库 git remote add origin 仓库链接，若出现origin已存在，使用git remote rm origin，然后再次git remote 		add origin 仓库链接 即可，
+7使用git push origin master将本地仓库推送到远端仓库中，要求输入github用户名和密码
